@@ -1,6 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.9.12120.119 stable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WakingSkeleton.Test", "WakingSkeleton.Test\WakingSkeleton.Test.csproj", "{D53C043A-780C-4635-877E-5929E3280A41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover", "MarsRover\MarsRover.csproj", "{A881A111-3E72-4676-977D-D4BA8882CD83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,5 +17,15 @@ Global
 		{D53C043A-780C-4635-877E-5929E3280A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D53C043A-780C-4635-877E-5929E3280A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D53C043A-780C-4635-877E-5929E3280A41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A881A111-3E72-4676-977D-D4BA8882CD83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A881A111-3E72-4676-977D-D4BA8882CD83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A881A111-3E72-4676-977D-D4BA8882CD83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A881A111-3E72-4676-977D-D4BA8882CD83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BAF98429-1CB5-4BBB-B20E-F8EB1095A485}
 	EndGlobalSection
 EndGlobal

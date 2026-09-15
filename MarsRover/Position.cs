@@ -1,4 +1,4 @@
 ﻿namespace MarsRover
 {
-    public record Position(double X, double Y);
+    public record Position(int X, int Y);
 }

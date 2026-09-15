@@ -6,11 +6,14 @@ public sealed class RoverTests
 {
 
     [Test]
-    public void RoverHasPosition()
+    [TestCase(0,0)]
+    [TestCase(1,1)]
+    public void RoverHasPosition(int x, int y)
     {
-        var position = new Position(0, 0);
-        var rover = new Rover(position, Direction.North);
-        Assert.That(rover.Position, Is.EqualTo(position));
+        var actualPosition = new Position(x, y);
+        var expectedPosition = new Position(x, y);
+        var rover = new Rover(actualPosition, Direction.North);
+        Assert.That(rover.Position, Is.EqualTo(expectedPosition));
     }
 
     [Test]

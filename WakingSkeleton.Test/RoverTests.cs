@@ -26,4 +26,13 @@ public sealed class RoverTests
         var rover = new Rover(new Position(0, 0), direction);
         Assert.That(rover.Direction, Is.EqualTo(direction));
     }
+
+    [Test]
+    public void RoverProcessesMovementCommands()
+    {
+        var rover = new Rover(new Position(0, 0), Direction.North);
+        var expectedPosition = new Position(0, 1);
+        rover.ProcessCommand(MovementCommand.F);
+        Assert.That(rover.Position, Is.EqualTo(expectedPosition));
+    }
 }

@@ -32,7 +32,7 @@ public sealed class RoverTests
     [TestCase(Direction.East, 1, 0)]
     [TestCase(Direction.South, 0, -1)]
     [TestCase(Direction.West, -1, 0)]
-    public void RoverProcessesForwardMovementCommands(Direction startingDirection, int expectedFinalXPosition, int expectedFinalYPosition)
+    public void RoverProcessesForwardMovementCommand(Direction startingDirection, int expectedFinalXPosition, int expectedFinalYPosition)
     {
         var rover = new Rover(new Position(0, 0), startingDirection);
         var expectedPosition = new Position(expectedFinalXPosition, expectedFinalYPosition);

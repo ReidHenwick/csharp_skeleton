@@ -2,11 +2,13 @@
 {
     public class Rover
     {
-        public Rover(Position position)
+        public Rover(Position position, Direction direction)
         {
-            Position = position;
+            this.Position = position;
+            this.Direction = direction;
         }
 
         public Position Position { get; private set; }
+        public Direction Direction { get; private set; }
     }
 }

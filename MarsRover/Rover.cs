@@ -13,7 +13,23 @@
 
         public void ProcessCommand(MovementCommand command)
         {
-            Position = Position with { Y = Position.Y + 1 };
+            switch (command)
+            {
+                case MovementCommand.F:
+                    this.MoveForward();
+                    break;
+            }
+        }
+
+        public void MoveForward()
+        {
+            switch (this.Direction)
+            {
+                case Direction.North:
+                    this.Position = new Position(this.Position.X, this.Position.Y + 1);
+                    break;
+
+            }
         }
     }
 }

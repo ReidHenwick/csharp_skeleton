@@ -28,10 +28,14 @@ public sealed class RoverTests
     }
 
     [Test]
-    public void RoverProcessesMovementCommands()
+    [TestCase(Direction.North, 0, 1)]
+    [TestCase(Direction.East, 1, 0)]
+    [TestCase(Direction.South, 0, -1)]
+    [TestCase(Direction.West, -1, 0)]
+    public void RoverProcessesForwardMovementCommands(Direction startingDirection, int expectedFinalXPosition, int expectedFinalYPosition)
     {
-        var rover = new Rover(new Position(0, 0), Direction.North);
-        var expectedPosition = new Position(0, 1);
+        var rover = new Rover(new Position(0, 0), startingDirection);
+        var expectedPosition = new Position(expectedFinalXPosition, expectedFinalYPosition);
         rover.ProcessCommand(MovementCommand.F);
         Assert.That(rover.Position, Is.EqualTo(expectedPosition));
     }

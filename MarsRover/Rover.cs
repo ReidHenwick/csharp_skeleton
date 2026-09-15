@@ -28,6 +28,15 @@
                 case Direction.North:
                     this.Position = new Position(this.Position.X, this.Position.Y + 1);
                     break;
+                case Direction.East:
+                    this.Position = new Position(this.Position.X + 1, this.Position.Y);
+                    break;
+                case Direction.South:
+                    this.Position = new Position(this.Position.X, this.Position.Y - 1);
+                    break;
+                case Direction.West:
+                    this.Position = new Position(this.Position.X - 1, this.Position.Y);
+                    break;
 
             }
         }

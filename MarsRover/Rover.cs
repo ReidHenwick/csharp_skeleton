@@ -2,13 +2,11 @@
 {
     public class Rover
     {
-        public Rover(double positionX, double positionY)
+        public Rover(Position position)
         {
-            PositionX = positionX;
-            PositionY = positionY;
+            Position = position;
         }
 
-        public double PositionX { get; private set; }
-        public double PositionY { get; private set; }
+        public Position Position { get; private set; }
     }
 }

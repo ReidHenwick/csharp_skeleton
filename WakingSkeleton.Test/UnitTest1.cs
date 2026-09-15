@@ -2,7 +2,7 @@ namespace WakingSkeleton.Test;
 
 using MarsRover;
 
-public sealed class Tests
+public sealed class RoverTests
 {
 
     [Test]

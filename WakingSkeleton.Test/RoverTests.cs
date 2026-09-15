@@ -14,9 +14,13 @@ public sealed class RoverTests
     }
 
     [Test]
-    public void RoverHasDirection()
+    [TestCase(Direction.North)]
+    [TestCase(Direction.East)]
+    [TestCase(Direction.South)]
+    [TestCase(Direction.West)]
+    public void RoverHasDirection(Direction direction)
     {
-        var rover = new Rover(new Position(0, 0), Direction.North);
-        Assert.That(rover.Direction, Is.EqualTo(Direction.North));
+        var rover = new Rover(new Position(0, 0), direction);
+        Assert.That(rover.Direction, Is.EqualTo(direction));
     }
 }

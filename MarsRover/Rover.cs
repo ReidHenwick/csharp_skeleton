@@ -1,18 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace MarsRover
+﻿namespace MarsRover
 {
     public class Rover
     {
-        public Rover(double positionX)
+        public Rover(double positionX, double positionY)
         {
             PositionX = positionX;
+            PositionY = positionY;
         }
 
         public double PositionX { get; private set; }
+        public double PositionY { get; private set; }
     }
 }

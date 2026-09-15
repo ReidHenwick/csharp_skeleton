@@ -4,8 +4,16 @@ public class Tests
 {
 
     [Test]
-    public void Test1()
+    public void RoverHasPosition()
     {
-        Assert.Pass();
+        var rover = new Rover();
+        Assert.That(rover.PositionX, Is.EqualTo(0));
+        Assert.That(rover.PositionY, Is.EqualTo(0));
     }
+}
+
+public class Rover
+{
+    public int PositionX { get; private set; }
+    public int PositionY { get; private set; }
 }
